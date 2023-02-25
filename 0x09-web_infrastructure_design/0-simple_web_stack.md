@@ -2,7 +2,7 @@
 
 ![Image of a simple web stack](0-simple_web_stack.png)
 
-[Visit Board](https://lucid.app/lucidchart/cbacd0c4-e1df-4280-9dfa-f2cc3a6d4da7/edit?viewport_loc=-863%2C-486%2C3588%2C1677%2C0_0&invitationId=inv_d591bc51-02af-4426-a863-616dd3738312)
+[Visit Board](https://photos.app.goo.gl/jwXaD4Q3K4yoJ56B6)
 
 ## Description
 
