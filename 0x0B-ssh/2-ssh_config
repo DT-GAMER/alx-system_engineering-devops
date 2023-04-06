@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Configure SSH configuration file
+Host *
+     user 136733-web-01
+     IdentityFile ~/.ssh/id_rsa
+     PasswordAuthentication no
+     BatchMode yes
