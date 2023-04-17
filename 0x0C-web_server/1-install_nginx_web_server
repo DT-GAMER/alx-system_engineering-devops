@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Check if running as root
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
+# Install Nginx and create webpage
+sudo apt-get update -y && \
+sudo apt-get install -y nginx && \
+if echo -e \
+"http {
+    root /var/www/school;
+    index index.html;
+    server {
+        listen 80;
+        location / {
+        }
+    }
+}
+events {
+}" > /etc/nginx/nginx.conf && \
+sudo mkdir -p /var/www/school && \
+echo "Hello World!" > /var/www/school/index.html && \
+sudo service nginx start
+then
+    echo "Nginx installed successfully"
+else
+    echo "Failed to install Nginx"
+    exit 1
+fi
