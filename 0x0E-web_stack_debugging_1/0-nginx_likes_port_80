@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# debug nginx servicer  to listen to port 80
+
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install curl
+sudo apt-get -y install nginx
+
+#to listen to port 80
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
